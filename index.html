@@ -1,100 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <title>Gym Website</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">Gym Website</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./timings.html">Timings</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 p-5">
-          <h2>Welcome to the Fitness World!</h2>
+  <link rel="stylesheet" href="styles.css">
+  <title>Gym Website</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <div class="d-flex">
+        <a class="navbar-brand" href="./index.html">Gym Website</a>
+        <div id="gym_logo">
+          <img style="width: 40px;"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB+CAMAAADV/VW6AAAAZlBMVEX///8AAAABAQFNTU1SUlInJydAQEAVFRU1NTU8PDz5+fkeHh45OTkkJCR6enpGRkbS0tKNjY2+vr6Xl5fi4uKxsbFxcXHb29vz8/MQEBBlZWXLy8tXV1fr6+swMDCrq6uDg4OioqIZEda+AAADW0lEQVRoge2Z25aqMAyGrRwVOQiKoKj4/i85JKGIDK1QmTWz9s534XRp2p+0aRsyqxXDMAzDMAzDMAzDMAzD/OMUSZpernqbLdgcfkD8ur+JhjA/qW2KbAc2wVljY8YlhIHX8HFX2Zw2nU22sHozLAKjK/QP0qaxEvWS6gWOLNC55k8yZrMN6cfWJl1EeFsUxWpV45BBnvvYqLYjlg8SP+cxLkAg+36gfTzHrutWWQAjVk1EFxG6NxJaWwvkb2CTCVijDPvae+N9cPKFBBwjlzfQHll9WHmxpmWxKP5aHmbqF/GMpUbyTN/iHNffrRP43qX2sR+EQkQm6gdPhhLE+1oOcuy1v8nH1E5JnvquzfyPSL2UTzBbvunrUVfnzVk5wtWBjlZyOJxqDOW58sK9NH332Pc4Wx4OGvnYZwPvhaCQjxT2b8AhcmrfTeTP0o3me/sj+eOvy89e+wXl0w+8Tz6Qd/cIhl6cPdvRajuAvHTIJoe+/r5tz5U/5fKgDWPE77Vv3d03AL72LLTZgXwQt+3WXpen9Ll3h60ILWSHnlHb7x3EQ4Rno80G5cnelWNp8pTBrJMrL/LiRZ7OVPnxbCjk5RE8IQco/Ha2dN4rJ1/hffuz//76v/TzGoX8mDraq7yXj/fe/T3mNZa90ck7JNPDdnXyQWWHiot6AJ7Rvm0tKu/Ztj/t7M+ga7lxb5rQazahO8TXyru7Ev6+z7+TZ5KxaOhh/jeaIr9SPTf2kvsefq7eq6+uZZepzZLXTH577pSTkp5D3G0k5bFjMPkinppyp9GiG09A5Efp2LuJEky2VPL1d/uTLvKnLPpgBnTyqvteJW943/8ZefG/ea+J/J+Xx8gvY9xUgYm8oL6O2WsGvWR5bpOuOXhyzJRv++LNZfCShTfvmu4fbMyVl32F0SsmvGDLu2pt4r3sKwwLDIPyQoBD2zfFqTciL68ao/JCc47uXu4T8h7TBmVxhcKtmzfEsLjyLC09oNAhvNiyrRCDery0RFvFtm690pJlXlrCUdvCGgxYhiH6riyswZOFIfm+QGGto6BsqV0FRc4Ukn5rY7DX1OAhJENJU1TtbOol1WVJGdGXlCnkFi4pdwV1Z1JBfUJGO5tf/XcCwzAMwzAMwzAMwzAMw/wpvgBK5zhSjeV1aAAAAABJRU5ErkJggg=="
+            alt="Description of the image" />
         </div>
       </div>
-      <hr />
-      <div class="row">
-        <div class="col-12">
-          <h4>Services</h4>
-          <ul>
-            <li>Service 1</li>
-            <li>Service 2</li>
-            <li>Service 3</li>
-            <li>Service 4</li>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./timings.html">Timings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
           </ul>
         </div>
-        <hr />
-        <div class="col-12">
-          <h4>Timings</h4>
-          <ul>
-            <li>Timings 1</li>
-            <li>Timings 2</li>
-            <li>Timings 3</li>
-            <li>Timings 4</li>
-          </ul>
-        </div>
-        <hr />
-        <div class="col-12">
-          <h4>Plans</h4>
-          <ul>
-            <li>Plans 1</li>
-            <li>Plans 2</li>
-            <li>Plans 3</li>
-            <li>Plans 4</li>
-          </ul>
-        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 p-5">
+        <h2>Welcome to the Fitness World!</h2>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <hr />
+    <div class="row">
+      <div class="col-12">
+        <h4>Services</h4>
+        <ul>
+          <li>Service 1</li><br>
+          <li>Service 2</li><br>
+          <li>Service 3</li><br>
+          <li>Service 4</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h4>Timings</h4>
+        <ul>
+          <li>Timings 1</li><BR>
+          <li>Timings 2</li><BR>
+          <li>Timings 3</li><BR>
+          <li>Timings 4</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h4>Plans</h4>
+        <ul>
+          <li>Plans 1</li><BR>
+          <li>Plans 2</li><BR>
+          <li>Plans 3</li><BR>
+          <li>Plans 4</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer>Unlock Your Potential: Transform Your Body, Elevate Your Life <br>
+    Book Now!
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

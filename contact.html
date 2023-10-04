@@ -1,84 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <title>Gym Website</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">Gym Website</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./timings.html">Timings</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2>Contact Us!</h2>
-          <p>for more information!</p>
+<head>
+  <title>Register Now | Get Fit | Best Gym</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="cont.css">
+</head>
+<body>
+	<div class="section">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+			          	<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Log In</h4>
+											<div class="form-group">
+												<input type="email" class="form-style" placeholder="Email">
+												<i class="input-icon uil uil-at"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="password" class="form-style" placeholder="Password">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<a href="https://github.com/sanchitadas5" class="btn mt-4">Login</a>
+                      <p class="mb-0 mt-4 text-center"><a href="https://www.youtube.com/" class="link">Forgot your password?</a></p>
+                      <p><button class="home-button" id="homeButton">
+                        <i class="home-icon">🏠</i>
+                    </button></p>
+				      					</div>
+			      					</div>
+			      				</div>
+								<div class="card-back">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-3 pb-3">Sign Up</h4>
+											<div class="form-group">
+												<input type="text" class="form-style" placeholder="Full Name">
+												<i class="input-icon uil uil-user"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="tel" class="form-style" placeholder="Phone Number">
+												<i class="input-icon uil uil-phone"></i>
+											</div>	
+                      <div class="form-group mt-2">
+												<input type="email" class="form-style" placeholder="Email">
+												<i class="input-icon uil uil-at"></i>
+											</div>
+											<div class="form-group mt-2">
+												<input type="password" class="form-style" placeholder="Password">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<a href="https://github.com/sanchitadas5" class="btn mt-4">Register</a>
+				      					</div>
+			      					</div>
+			      				</div>
+			      			</div>
+			      		</div>
+			      	</div>
+		      	</div>
+	      	</div>
+	    </div>
+	</div>
+  <script>
+    // Get a reference to the button element
+    const homeButton = document.getElementById('homeButton');
 
-          <form action="POST">
-            <div>
-              <label for="name">Name</label>
-              <input type="text" class="form-control" name="name" />
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" class="form-control" name="email" />
-            </div>
-            <div>
-              <label for="message">Message</label>
-              <input type="text" class="form-control" name="message" />
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    // Add a click event listener to the button
+    homeButton.addEventListener('click', function() {
+        // Debug: Log a message to the console
+        console.log('Button clicked!');
+
+        // Change the URL to "index.htm" when the button is clicked
+        window.location.href = 'index.html';
+    });
+</script>
+</body>
 </html>
